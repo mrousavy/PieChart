@@ -1,20 +1,18 @@
 ﻿using PieChart.Annotations;
-using PieChart.Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 
-namespace PieChart
+namespace PieChart.Models
 {
-    /// <summary>
-    /// Interaction logic for PieChart.xaml
-    /// </summary>
-    public partial class PieChart : INotifyPropertyChanged
+    public class PieChartModel : INotifyPropertyChanged
     {
-        public PieChart()
+        public PieChartModel(PieChart view)
         {
-            InitializeComponent();
-            DataContext = new PieChartModel();
+            View = view;
         }
+
+
 
         #region Dependency Properties
 
@@ -23,10 +21,10 @@ namespace PieChart
         /// </summary>
         public double PieWidth
         {
-            get => (double)GetValue(PieWidthProperty);
+            get => (double)View.GetValue(PieWidthProperty);
             set
             {
-                SetValue(PieWidthProperty, value);
+                View.SetValue(PieWidthProperty, value);
                 OnPropertyChanged();
             }
         }
@@ -39,10 +37,10 @@ namespace PieChart
         /// </summary>
         public double PieHeight
         {
-            get => (double)GetValue(PieHeightProperty);
+            get => (double)View.GetValue(PieHeightProperty);
             set
             {
-                SetValue(PieHeightProperty, value);
+                View.SetValue(PieHeightProperty, value);
                 OnPropertyChanged();
             }
         }
@@ -55,10 +53,10 @@ namespace PieChart
         /// </summary>
         public double LegendWidth
         {
-            get => (double)GetValue(LegendWidthProperty);
+            get => (double)View.GetValue(LegendWidthProperty);
             set
             {
-                SetValue(LegendWidthProperty, value);
+                View.SetValue(LegendWidthProperty, value);
                 OnPropertyChanged();
             }
         }
@@ -71,10 +69,10 @@ namespace PieChart
         /// </summary>
         public double LegendHeight
         {
-            get => (double)GetValue(LegendHeightProperty);
+            get => (double)View.GetValue(LegendHeightProperty);
             set
             {
-                SetValue(LegendHeightProperty, value);
+                View.SetValue(LegendHeightProperty, value);
                 OnPropertyChanged();
             }
         }
@@ -85,6 +83,7 @@ namespace PieChart
         #endregion
 
         #region Properties
+        public PieChart View { get; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
