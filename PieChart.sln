@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieChart", "PieChart\PieChart.csproj", "{2F986B73-9340-4E1A-8F8E-E90B7F97D8FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieChart", "PieChart\PieChart.csproj", "{9657AD87-CA73-4D47-9571-82181BF86754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieChartTest", "PieChartTest\PieChartTest.csproj", "{2A088CD9-6AFB-44CC-BD5A-77AA73F9CA4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F986B73-9340-4E1A-8F8E-E90B7F97D8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F986B73-9340-4E1A-8F8E-E90B7F97D8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F986B73-9340-4E1A-8F8E-E90B7F97D8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F986B73-9340-4E1A-8F8E-E90B7F97D8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9657AD87-CA73-4D47-9571-82181BF86754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9657AD87-CA73-4D47-9571-82181BF86754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9657AD87-CA73-4D47-9571-82181BF86754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9657AD87-CA73-4D47-9571-82181BF86754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A088CD9-6AFB-44CC-BD5A-77AA73F9CA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A088CD9-6AFB-44CC-BD5A-77AA73F9CA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A088CD9-6AFB-44CC-BD5A-77AA73F9CA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A088CD9-6AFB-44CC-BD5A-77AA73F9CA4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -56,6 +56,9 @@
     <Compile Include="Legend.xaml.cs">
       <DependentUpon>Legend.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PieChart.xaml.cs">
+      <DependentUpon>PieChart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PieChartLayout.xaml.cs">
       <DependentUpon>PieChartLayout.xaml</DependentUpon>
     </Compile>
@@ -63,6 +66,7 @@
     <Compile Include="PiePlotter.xaml.cs">
       <DependentUpon>PiePlotter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
@@ -70,6 +74,10 @@
     <Page Include="Legend.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PieChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PieChartLayout.xaml">
       <Generator>MSBuild:Compile</Generator>
